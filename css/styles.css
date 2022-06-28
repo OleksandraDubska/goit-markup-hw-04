@@ -141,11 +141,22 @@ img {
 /* Hero */
 
 .hero {
+    max-width: 1600px;
+    min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 
     text-align: center;
-    background-color: var(--accent-background-color);       
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-color: #c4c4c4;
 }
 
 .hero-title {
@@ -161,17 +172,17 @@ img {
 }
 
 .hero-button {
+    border: none;
     border-radius: 4px;
-    border-color: transparent;
-    padding: 8px 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;    
     letter-spacing: 0.06em;
-    text-align: center;   
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
 
     color: var(--white-text-color);
     background-color: var(--accent-color);
@@ -180,8 +191,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-    color: inherit;
-    background-color: var(--secondary-background-color);
+    background-color: #188ce8;
 }
 
 /* Features */
@@ -193,6 +203,19 @@ img {
 
 .features-box .item {
     width: 270px;
+}
+
+.features-box .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-color: var(--secondary-background-color);    
 }
 
 .feature-title {
@@ -256,6 +279,11 @@ img {
 
 .person {
     width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);       
+
     background-color: var(--primery-background-color);
 }
 
@@ -282,6 +310,31 @@ img {
     color: var(--secondary-text-color);   
 }
 
+/* Client */
+
+.client-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.client-box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.client {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
 /* Projects */
 
 .filter {
@@ -295,9 +348,9 @@ img {
 }
 
 .filter-button {
+    border: none;
     border-radius: 4px;
-    border-color: transparent;
-    padding: 4px 20px;
+    padding: 6px 22px;
 
     font-family: inherit;
     font-weight: 500;
@@ -314,6 +367,9 @@ img {
 .filter-button:hover,
 .filter-button:focus,
 .filter-button.current {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--white-text-color);
     background-color: var(--accent-color);
 }
@@ -325,6 +381,13 @@ img {
 
 .project-item {
     width: 370px;
+}
+
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item:not(:nth-child(3n)) {
