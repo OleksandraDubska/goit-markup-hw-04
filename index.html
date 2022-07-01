@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container header-box">
             <nav class="nav">
-                <a href="./index.html" lang="en" class="logo link">Web<span class="logo-black">Studio</span></a>                        
+                <a href="./index.html" class="logo link" lang="en">Web<span class="logo-black">Studio</span></a>                        
                 <ul class="list site-nav">
                     <li class="item"><a href="./index.html" class="link current">Студія</a></li>
                     <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
@@ -26,8 +26,20 @@
                 </ul>      
             </nav>
             <ul class="list contact-list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a></li>
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="link contact">
+                        <svg class="contact-icon" width="16" height="12" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="link contact">
+                        <svg class="contact-icon" width="10" height="16" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -45,18 +57,38 @@
                 <h2 class="visually-hidden">Переваги</h2>
                 <ul class="list features-box">
                     <li class="item">
+                        <div class="feature-image">
+                            <svg class="feauter-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature-title">Увага до деталей</h3>
                         <p class="feature-description">Ідейні міркування, а також початок повсякденної роботи з формування позиції.</p>
                     </li>
                     <li class="item">
+                        <div class="feature-image">
+                            <svg class="feauter-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature-title">Пунктуальність</h3>
                         <p class="feature-description">Задача організації, особливо рамки і місце навчання кадрів призводить.</p>
                     </li>
                     <li class="item">
+                        <div class="feature-image">
+                            <svg class="feauter-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature-title">Планування</h3>
                         <p class="feature-description">Рівним чином консультація з широким активом значною мірою обумовлює.</p>
                     </li>
                     <li class="item">
+                        <div class="feature-image">
+                            <svg class="feauter-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="feature-title">Сучасні технології</h3>
                         <p class="feature-description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -89,33 +121,122 @@
                 <ul class="list team-box">
                     <li class="person">
                         <img class="person-img" src="./images/person-1.jpg" alt="Продакт-дизайнер" width="270">
-                        <div class="person-text">
+                        <div class="person-info">
                             <h3 class="person-name">Ігор Дем'яненко</h3>
                             <p lang="en" class="person-description">Product Designer</p>
+                            <ul class="list person-links">
+                                <li><a href="#" class="link person-link" aria-label="Instagram">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Twitter">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Facebook">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="LinkedIn">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>
                         </div>
                     </li>
+                    
                     <li class="person">
                         <img class="person-img" src="./images/person-2.jpg" alt="Фронтенд-розробниця" width="270">
-                        <div class="person-text">
+                        <div class="person-info">
                             <h3 class="person-name">Ольга Репіна</h3>
                             <p lang="en" class="person-description">Frontend Developer</p>
+                            <ul class="list person-links">
+                                <li><a href="#" class="link person-link" aria-label="Instagram">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Twitter">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Facebook">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="LinkedIn">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>                       
                         </div>
                     </li>
                     <li class="person">
                         <img class="person-img" src="./images/person-3.jpg" alt="Маркетолог" width="270">
-                        <div class="person-text">
+                        <div class="person-info">
                             <h3 class="person-name">Микола Тарасов</h3>
-                            <p lang="en" class="person-description">Marketing</p>
+                            <p lang="en" class="person-description">Marketing</p>                       
+                            <ul class="list person-links">
+                                <li><a href="#" class="link person-link" aria-label="Instagram">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Twitter">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Facebook">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="LinkedIn">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>
                         </div>
                     </li>
                     <li class="person">
                         <img class="person-img" src="./images/person-4.jpg" alt="Графічний дизайнер" width="270">
-                        <div class="person-text">
+                        <div class="person-info">
                             <h3 class="person-name">Михайло Єрмаков</h3>
-                            <p lang="en" class="person-description">UI Designer</p>
+                            <p lang="en" class="person-description">UI Designer</p>                       
+                            <ul class="list person-links">
+                                <li><a href="#" class="link person-link" aria-label="Instagram">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Twitter">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="Facebook">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#" class="link person-link" aria-label="LinkedIn">
+                                        <svg class="person-icon">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a></li>                                
+                            </ul>
                         </div>
                     </li>
-                </ul>
+                </ul>                
             </div>
         </section>
 
@@ -124,12 +245,36 @@
             <div class="container">
                 <h2 class="client-title">Постійні клієнти</h2>
                 <ul class="list client-box">
-                    <li class="client"><a href="#"></a></li>
-                    <li class="client"><a href="#"></a></li>
-                    <li class="client"><a href="#"></a></li>
-                    <li class="client"><a href="#"></a></li>
-                    <li class="client"><a href="#"></a></li>
-                    <li class="client"><a href="#"></a></li>
+                    <li><a href="#" class="link client-link">
+                            <svg class="client-icon">
+                                <use href="./images/icons.svg#icon-client-1"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="link client-link">
+                            <svg class="client-icon">
+                                <use href="./images/icons.svg#icon-client-2"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="link client-link">
+                            <svg class="client-icon">
+                                <use href="./images/icons.svg#icon-client-3"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="link client-link">
+                            <svg class="client-icon">
+                                <use href="./images/icons.svg#icon-client-4"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="link client-link">
+                            <svg class="client-icon">
+                                <use href="./images/icons.svg#icon-client-5"></use>
+                            </svg>                            
+                        </a></li>
+                    <li><a href="#" class="link client-link">
+                            <svg class="client-icon">
+                                <use href="./images/icons.svg#icon-client-6"></use>
+                            </svg>
+                        </a></li>
                 </ul>
             </div>
         </section>
@@ -137,15 +282,42 @@
 
     <!-- Підвал сайту -->
     <footer class="footer">
-        <div class="container">
-            <a href="./index.html" lang="en" class="logo link">Web<span class="logo-white">Studio</span></a>
-            <address class="address">
-                <p class="place">м. Київ, пр-т Лесі Українки, 26</p>
-                <ul class="list">
-                    <li class="item"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                    <li class="item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+        <div class="container footer-box">
+            <div class="">
+                <a href="./index.html" lang="en" class="logo link">Web<span class="logo-white">Studio</span></a>
+                <address class="address">
+                    <p class="place">м. Київ, пр-т Лесі Українки, 26</p>
+                    <ul class="list">
+                        <li class="item"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                        <li class="item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div>
+                <h2 class="social-title">Приєднуйтесь</h2>
+                <ul class="list social-links">
+                    <li><a href="#" class="link social-link" aria-label="Instagram">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="link social-link" aria-label="Twitter">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="link social-link" aria-label="Facebook">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="link social-link" aria-label="LinkedIn">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
     
